@@ -11,23 +11,23 @@
     <link rel="stylesheet" href="css/style.css">
 
 </head>
-<body>
+<body onload="init()">
     <div class="container">
         <h1 class="text-center my-5">Pomodoro App</h1>
     </div>
     <div class="timer d-flex justify-content-center align-items-center">
         <div class="row">
-            <div class="col-5" id="minutes"></div>
+            <div class="col-5 text-center" id="minutes"></div>
             <div class="col-2">:</div>
-            <div class="col-5" id="seconds"></div>
+            <div class="col-5 text-center" id="seconds"></div>
         </div>
     </div>
     <div class="btns text-center">
-        <button class="btn"><i class="fas fa-play fa-2x"></i></button>
+        <button class="btn mb-2 mx-2" onclick="start()"><i class="fas fa-play fa-2x"></i></button>
         <a href="index.html"><i class="fas fa-redo-alt fa-2x"></i></a>
     </div>
 
-
+    <script src="js/main.js"></script>
 
     <!--Bootstrap-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
