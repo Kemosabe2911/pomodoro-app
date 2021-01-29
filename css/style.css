@@ -43,3 +43,24 @@ body{
     border-color: #c0e218;
     transition: 0.5s;
 }
+.popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 22rem;
+    height: 22rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #c0e218;
+    color: #351f39;
+    opacity: 0;
+}
+.popup h3{
+    padding: 10px;
+}
+.active{
+    opacity: 1;
+}

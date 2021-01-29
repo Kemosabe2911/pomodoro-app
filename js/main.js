@@ -23,11 +23,12 @@ function start(){
         seconds= seconds<10 ? "0"+seconds : seconds;
         document.getElementById("minutes").innerHTML=minutes;
         document.getElementById("seconds").innerHTML=seconds;
-        if(seconds<=56){
+        if(seconds<=0){
             seconds=59;
-            if(minutes<=24){
+            if(minutes<=0){
                 bell.play();
                 clearInterval(interval);
+                document.getElementById("popup").classList.add("active");
             }
             minutes=minutes-1;
         }
