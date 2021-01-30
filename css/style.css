@@ -36,7 +36,8 @@ body{
 .fa-play,.fa-redo-alt{
     color: #c0e218;
     border: 2px solid transparent;
-    padding: 1.5rem;
+    padding: 1rem;
+    margin: 0px 10px;
     border-radius: 50%;
 }
 .fa-play:hover,.fa-redo-alt:hover{
@@ -63,4 +64,11 @@ body{
 }
 .active{
     opacity: 1;
+}
+
+@media (max-width: 768px){
+    .timer{
+        width: 15rem;
+        height: 15rem;
+    }
 }
